@@ -1,4 +1,4 @@
-name: arangodb-matrix-pr
+name: Pre-Jenkins check
 
 on:
   push:
@@ -17,4 +17,4 @@ jobs:
         failComment: "Jenkins not run yet!"
         url: "https://jenkins.arangodb.biz/job/arangodb-matrix-pr/"
         description: "Jenkins has not yet been run! Start one now... ${ACCESS_TOKEN}"
-        name: "Pre-Jenkins warning"
+        name: "arangodb-matrix-pr"
