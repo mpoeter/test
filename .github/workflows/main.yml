@@ -16,5 +16,5 @@ jobs:
         status: "error"
         failComment: "Jenkins not run yet!"
         url: "https://jenkins.arangodb.biz/job/arangodb-matrix-pr/"
-        description: "Jenkins has not yet been run! Start one now..."
+        description: "Jenkins has not yet been run! Start one now... ${ACCESS_TOKEN}"
         name: "Pre-Jenkins warning"
