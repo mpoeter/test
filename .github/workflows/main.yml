@@ -12,8 +12,9 @@ jobs:
     steps:
     - uses: ouzi-dev/commit-status-updater@v1.1.0
       with:
-          status: "error"
-          failComment: "Jenkins not run yet!"
-          url: "https://jenkins.arangodb.biz/job/arangodb-matrix-pr/"
-          description: "Jenkins has not yet been run! Start one now..."
-          name: "Pre-Jenkins warning"
+        token: ${ github.token }
+        status: "error"
+        failComment: "Jenkins not run yet!"
+        url: "https://jenkins.arangodb.biz/job/arangodb-matrix-pr/"
+        description: "Jenkins has not yet been run! Start one now..."
+        name: "Pre-Jenkins warning"
