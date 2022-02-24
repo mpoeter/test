@@ -1,4 +1,4 @@
-name: Pre-Jenkins check
+name: arangodb-matrix-pr
 
 on:
   push:
