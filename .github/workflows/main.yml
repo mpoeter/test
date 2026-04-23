@@ -12,9 +12,8 @@ jobs:
     steps:
     - uses: ouzi-dev/commit-status-updater@v1.1.0
       with:
-        token: ${ACCESS_TOKEN}
         status: "error"
         failComment: "Jenkins not run yet!"
         url: "https://jenkins.arangodb.biz/job/arangodb-matrix-pr/"
-        description: "Jenkins has not yet been run! Start one now... ${ACCESS_TOKEN}"
+        description: "Jenkins has not yet been run! Start one now..."
         name: "arangodb-matrix-pr"
